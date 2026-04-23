@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-slate-50 text-ink-900 antialiased;
+    font-feature-settings: 'ss01', 'cv11', 'salt';
+  }
+  ::selection {
+    @apply bg-accent-200 text-accent-900;
+  }
+  /* Focus styles */
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent-500 ring-offset-2 rounded;
+  }
+  h1, h2, h3, h4 { @apply tracking-tight font-display; }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-2.5 text-sm font-bold
+           transition-all duration-200 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed
+           active:scale-95 select-none;
+  }
+  .btn-primary {
+    @apply btn bg-accent-600 text-white shadow-lg shadow-accent-600/20 hover:bg-accent-700 hover:shadow-accent-600/30;
+  }
+  .btn-secondary {
+    @apply btn border border-ink-200 bg-white text-ink-700 hover:bg-ink-50 hover:border-ink-300;
+  }
+  .btn-danger {
+    @apply btn border border-red-200 bg-white text-red-600 hover:bg-red-50 hover:border-red-300;
+  }
+  .btn-gold {
+    @apply btn bg-gold-500 text-white shadow-lg shadow-gold-500/20 hover:bg-gold-600;
+  }
+  .input {
+    @apply w-full rounded-xl border border-ink-200 bg-white px-4 py-3 text-sm text-ink-900
+           placeholder-ink-400 transition-all focus:border-accent-500 focus:ring-4 focus:ring-accent-500/10 focus:outline-none;
+  }
+  .label {
+    @apply block text-[10px] font-bold uppercase tracking-widest text-ink-500 mb-2 ml-1;
+  }
+  .card {
+    @apply rounded-3xl border border-ink-200/50 bg-white shadow-card overflow-hidden transition-all duration-300;
+  }
+  .card-hover {
+    @apply hover:shadow-pop hover:-translate-y-1;
+  }
+  .badge {
+    @apply inline-flex items-center rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider;
+  }
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20;
+  }
+}
