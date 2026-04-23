@@ -1,9 +1,9 @@
-# Render.com blueprint - deploys the Evently API.
+# Render.com blueprint - deploys the Eventix API.
 # Import this repo on Render, it auto-detects this file.
 # Env vars marked `sync: false` must be filled in via the Render dashboard.
 services:
   - type: web
-    name: evently-api
+    name: eventix-api
     runtime: node
     plan: free
     region: singapore

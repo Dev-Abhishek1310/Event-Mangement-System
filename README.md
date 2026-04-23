@@ -1,4 +1,4 @@
-# Evently
+# Eventix
 
 **Event services marketplace.** Users discover and book vendors - catering, decor, photography, venues, sound & lighting - for their events. Vendors manage their catalog and incoming orders. Admins oversee the marketplace.
 

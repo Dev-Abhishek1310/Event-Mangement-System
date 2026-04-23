@@ -2,7 +2,7 @@
   "name": "eventix-server",
   "version": "1.0.0",
   "private": true,
-  "description": "Evently REST API - Express + Mongoose + JWT",
+  "description": "Eventix REST API - Express + Mongoose + JWT",
   "main": "src/index.js",
   "type": "commonjs",
   "engines": {
